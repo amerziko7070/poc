@@ -1,0 +1,8 @@
+<html>
+  <body>
+    <script>
+      // التوجيه عبر الجافاسكربت قد يتخطى فلاتر الـ HTTP Header في بعض البيئات
+      window.location.href = "data:text/html,<script>alert(document.domain)</" + "script>";
+    </script>
+  </body>
+</html>
